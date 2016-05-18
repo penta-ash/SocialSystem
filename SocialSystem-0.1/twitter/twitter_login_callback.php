@@ -51,6 +51,6 @@ try{
 $_SESSION["twitter_user_token"] = $response['oauth_token'];
 $_SESSION["twitter_user_token_secret"] = $response['oauth_token_secret'];
 
-
-echo "You are Logged-in as !" . $response['screen_name'];
+$_SESSION['twitter_loggedin'] = true;
+header("Location: http://penta-test.com/ashraf/SocialSystem-0.1/social_accounts.php");
 ?>
