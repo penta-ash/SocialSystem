@@ -5,11 +5,12 @@
  * Date: 5/11/2016
  * Time: 8:59 AM
  */
+
 require "Config/config.php";
 require "DB/database.php";
-require "Includes/js_includes.php";
+//require "Includes/js_includes.php";
 
-$db = new DB('localhost','socialsys0_1','root','');
+$db = new DB('localhost','pentates_socialsys0_1','pentates_ashraf','yX52xT;4$[IB');
 
 if(!isset($_SESSION['login_token']))
 {
@@ -23,7 +24,6 @@ if(!isset($_SESSION['login_token']))
 
                 $_SESSION['user_name'] = $_REQUEST['user_name'];
 
-//                echo("<h5 style='color: lightseagreen;'>".bin2hex(openssl_random_pseudo_bytes(16))."</h5><p/>");
 
                 echo "<script>
                         var user_name = \"".$_SESSION['user_name']."\";
@@ -44,10 +44,10 @@ if(!isset($_SESSION['login_token']))
                     $login_token = bin2hex(openssl_random_pseudo_bytes(16));
 
                     $_SESSION['login_token'] = $login_token;
-                    header("Location: http://localhost/SocialSystem-0.1/social_accounts.php");
+
+                    header("Location: http://penta-test.com/ashraf/SocialSystem-0.1/social_accounts.php");
 
                 }
-
             }
             else
             {
@@ -68,7 +68,8 @@ if(!isset($_SESSION['login_token']))
 }
 else
 {
-    header("Location: http://localhost/SocialSystem-0.1/social_accounts.php");
+    header("Location: http://penta-test.com/ashraf/SocialSystem-0.1/social_accounts.php");
+//    header("Refresh: 0;url=http://penta-test.com/ashraf/SocialSystem-0.1/social_accounts.php");
 }
 
 ?>

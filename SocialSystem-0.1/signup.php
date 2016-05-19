@@ -5,11 +5,12 @@
  * Date: 5/11/2016
  * Time: 11:32 AM
  */
-require "DB/database.php";
 require "Config/config.php";
+require "DB/database.php";
 require "Includes/js_includes.php";
 
-$db = new DB('localhost','socialsys0_1','root','');
+
+$db = new DB('localhost','pentates_socialsys0_1','pentates_ashraf','yX52xT;4$[IB');
 
 if(!isset($_SESSION["login_token"]))
 {
@@ -111,7 +112,7 @@ if(!isset($_SESSION["login_token"]))
 }
 else
 {
-    header("Location: http://localhost/SocialSystem-0.1/index.php");
+    header("Location: http://penta-test.com/ashraf/SocialSystem-0.1/index.php");
 }
 
 ?>

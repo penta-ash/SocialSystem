@@ -5,6 +5,7 @@
  * Date: 5/16/2016
  * Time: 10:32 AM
  */
+require "./Config/config.php";
 ?>
 <html>
 <head>

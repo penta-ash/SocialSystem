@@ -9,5 +9,5 @@
 require "Config/config.php";
 
 session_destroy();
-header("Location: http://localhost/SocialSystem-0.1/")
+header("Location: http://penta-test.com/ashraf/SocialSystem-0.1/");
 ?>
